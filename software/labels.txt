@@ -1,0 +1,700 @@
+#1 PSK amp
+1p4 +28
+1p6 oscillator
+1p16 psk out
+1p20 vr
+1p23 vr
+1p26 vr
+1p28 psk in
+1p38 clk in
+1p40 clk out
+
+#2 PSK
+2p30 psk-1kHz
+2p29 psk-2kHz
+2p14 +28
+2p5 psk-data 
+2p4 psk-data'
+2p6 psk-out
+2p46 4kHz in
+2p27 2kHz out
+2p7 2kHz out
+2p42 1kHz out
+2p19 1kHz out
+2p44 1kHz pulse
+2p26 1kHz out
+2p45 4kHz
+
+#3 reader, digit 13
+3p4 digit-out
+3p5 digit13-bit2
+3p6 digit-out
+3p8 bit in
+3p9 bit in'
+3p10 clk'
+3p11 resetA
+3p12 resetB
+3p13 digit-out
+3p14 digit13-bit0'
+3p15 digit13-bit1
+3p16 digit-out
+3p17 enable
+3p18 digit13-bit2
+3p19 clk'
+3p20 reader-enable?
+3p21 main gate out
+3p22 reader-025
+3p23 digit-out
+3p24 emitter
+3p25 digit13-bit1'
+3p26 digit13-bit0
+3p27 digit-out
+3p28 reader-022
+3p29 reader-026
+3p30 reader-023
+3p31 inv2-out
+3p32 inv2-in
+3p33 digit-out
+3p34 inv3-in
+3p35 inv3-out
+3p36 digit-out
+3p37 reader-024
+3p38 reader-021
+3p41 inv1-in
+3p39 inv1-out
+3p40 reader-027-out
+3p42 reader-027-in
+3p43 nand-in
+3p44 ff out
+3p45 reset'
+3p46 reader-err'
+3p47 reader-err-J-in
+
+#4 digits 11,12
+4p4 digit12-bit0
+4p5 digit12-bit0'
+4p6 out1
+4p7 in
+4p8 in'
+4p9 out7b
+4p10 out0
+4p11 out4
+4p12 emitter
+4p14 digit12-bit1'
+4p15 out5
+4p16 enableB
+4p18 digit12-bit2
+4p19 enableA
+4p20 out5b
+4p21 out3b
+4p22 clk1'
+4p24 out2
+4p26 Q1
+4p27 out3
+4p28 digit12-bit2'
+4p30 out1b
+4p32 out6b
+4p34 out4b
+4p35 digit11-bit0
+4p36 out6
+4p37 reset
+4p38 digit11-bit0'
+4p39 out7
+4p41 out0b
+4p42 out2b
+4p43 digit11-bit2'
+4p44 digit11-bit2
+4p45 clk2'
+4p46 digit11-bit1'
+4p47 digit11-bit1
+
+#5 digits 9, 10
+5p4 digit10-bit0
+5p5 digit10-bit0'
+5p6 out1
+5p7 in
+5p8 in'
+5p9 out7b
+5p10 out0
+5p11 out4
+5p12 emitter
+5p14 digit10-bit1'
+5p15 out5
+5p16 enableB
+5p18 digit10-bit2
+5p19 enableA
+5p20 out5b
+5p21 out3b
+5p22 clk1'
+5p24 out2
+5p26 digit10-bit1
+5p27 out3
+5p28 digit10-bit2'
+5p30 out1b
+5p32 out6b
+5p34 out4b
+5p35 digit9-bit0
+5p36 out6
+5p37 reset
+5p38 digit9-bit0'
+5p39 out7
+5p41 out0b
+5p42 out2b
+5p43 digit9-bit2'
+5p44 digit9-bit2
+5p45 clk2'
+5p46 digit9-bit1'
+5p47 digit9-bit1
+
+#6 digits 7, 8
+6p4 digit8-bit0
+6p5 digit8-bit0'
+6p6 out1
+6p7 in
+6p8 in'
+6p9 out7b
+6p10 out0
+6p11 out4
+6p12 emitter
+6p14 digit8-bit1'
+6p15 out5
+6p16 enableB
+6p18 digit8-bit2
+6p19 enableA
+6p20 out5b
+6p21 out3b
+6p22 clk1'
+6p24 out2
+6p26 digit8-bit1
+6p27 out3
+6p28 digit8-bit2'
+6p30 out1b
+6p32 out6b
+6p34 out4b
+6p35 digit7-bit0
+6p36 out6
+6p37 reset
+6p38 digit7-bit0'
+6p39 out7
+6p41 out0b
+6p42 out2b
+6p43 digit7-bit2'
+6p44 digit7-bit2
+6p45 clk2'
+6p46 digit7-bit1'
+6p47 digit7-bit1
+
+#7 digits 5, 6
+7p4 digit6-bit0
+7p5 digit6-bit0'
+7p6 out1
+7p7 in
+7p8 in'
+7p9 out7b
+7p10 out0
+7p11 out4
+7p12 emitter
+7p14 digit6-bit1'
+7p15 out5
+7p16 enableB
+7p18 digit6-bit2
+7p19 enableA
+7p20 out5b
+7p21 out3b
+7p22 clk1'
+7p24 out2
+7p26 digit6-bit1
+7p27 out3
+7p28 digit6-bit2'
+7p30 out1b
+7p32 out6b
+7p34 out4b
+7p35 digit5-bit0
+7p36 out6
+7p37 reset
+7p38 digit5-bit0'
+7p39 out7
+7p41 out0b
+7p42 out2b
+7p43 digit5-bit2'
+7p44 digit5-bit2
+7p45 clk2'
+7p46 digit5-bit1'
+7p47 digit5-bit1
+
+#8 digits 3, 4
+8p4 digit4-bit0
+8p5 digit4-bit0'
+8p6 out1
+8p7 in
+8p8 in'
+8p9 out7b
+8p10 out0
+8p11 out4
+8p12 emitter
+8p14 digit4-bit1'
+8p15 out5
+8p16 enableB
+8p18 digit4-bit2
+8p19 enableA
+8p20 out5b
+8p21 out3b
+8p22 clk1'
+8p24 out2
+8p26 digit4-bit1
+8p27 out3
+8p28 digit4-bit2'
+8p30 out1b
+8p32 out6b
+8p34 out4b
+8p35 digit3-bit0
+8p36 out6
+8p37 reset
+8p38 digit3-bit0'
+8p39 out7
+8p41 out0b
+8p42 out2b
+8p43 digit3-bit2'
+8p44 digit3-bit2
+8p45 clk2'
+8p46 digit3-bit1'
+8p47 digit3-bit1
+
+#9 digits 1, 2
+9p4 digit2-bit0
+9p5 digit2-bit0'
+9p6 out1
+9p7 in
+9p8 in'
+9p9 out7b
+9p10 out0
+9p11 out4
+9p12 emitter
+9p14 digi2-bit1'
+9p15 out5
+9p16 enableB
+9p18 digit2-bit2
+9p19 enableA
+9p20 out5b
+9p21 out3b
+9p22 clk1'
+9p24 out2
+9p26 digit2-bit1
+9p27 out3
+9p28 digit2-bit2'
+9p30 out1b
+9p32 out6b
+9p34 out4b
+9p35 digit1-bit0
+9p36 out6
+9p37 reset
+9p38 digit1-bit0'
+9p39 out7
+9p41 out0b
+9p42 out2b
+9p43 digit1-bit2'
+9p44 digit1-bit2
+9p45 clk2'
+9p46 digit1-bit1'
+9p47 digit1-bit1
+
+#10 5-channel input
+
+#11 analog power
+11p4 apower
+11p6 apower
+11p8 apower
+11p10 apower
+11p12 apower
+11p14 apower
+11p18 apower
+11p20 apower
+11p22 apower
+11p26 apower
+11p28 apower
+11p32 apower
+11p34 apower
+11p36 apower
+11p40 apower
+11p42 apower
+11p44 apower
+11p46 apower
+
+#12 logic,#decoding local/remote
+12p9 in
+12p38 reset
+12p13 clk
+12p17 in
+12p6 in
+12p18 in
+12p19 in
+12p27 in
+12p44 ctrl in
+12p45 ctrl in
+12p28 in1
+12p21 in2
+12p40 in3
+12p30 in4
+12p22 in5
+12p41 in6
+12p20 in7
+12p12 in8
+12p33 in9
+12p8 out1
+12p7 out1'
+12p15 out
+
+#13 simple states: reader-related
+13p8 clk ctrl in
+13p7 clk'
+13p18 reset
+13p13 reset out'
+13p15 reset out
+13p14 signal-in
+13p17 reset q
+13p25 in
+13p4 in
+13p5 reader-028-in
+13p26 in
+13p29 in
+13p30 in
+13p27 out
+13p28 out
+13p20 latch j in
+13p16 clk in
+13p19 q out
+13p21 q' out
+13p22 k ctrl
+13p44 sync in RC
+13p41 sync out
+13p35 sync out'
+13p40 j in
+13p39 j in
+13p46 reset in
+13p45 q out
+13p6 state out
+13p31 state in
+13p32 state in
+13p33 state in
+13p36 state in
+13p38 state out
+13p37 state 0 q
+13p43 state 0 q'
+13p11 state out
+13p9 state 0 out
+13p10 state 0 out'
+13p24 state 1 ctrl
+13p47 state 1 out
+13p23 state 1 out'
+13p34 state 1 k in
+
+#14 6-stage ring counter, AGC verify
+14p26 AGC bit in
+14p7 AGC bit in'
+14p32 in
+14p34 in
+14p31 in
+14p35 AGC digit compare enable in
+14p29 AGC confirm/error in?
+14p27 AGC error reset'
+14p24 AGC error internal
+14p28 AGC confirm internal
+14p41 verif error in
+14p45 verif error ind
+14p40 driver emitter
+14p25 AGC confirm ind
+14p38 AGC confirm enable
+14p36 AGC confirm enable
+14p39 AGC error ind
+14p42 tape read error in
+14p46 tape read error ind
+14p22 ring ctrl in
+14p19 ring q1 out
+14p16 ring q1' out
+14p15 ring q2 out
+14p17 ring q2 out
+14p14 rng reset in
+14p6 ring q3 out
+14p18 ring q3' out
+14p23 ring ctrl in
+14p5 ring q4 out
+14p8 ring q4' out
+14p4 ring q5 out
+14p20 ring q5' out
+14p21 ring q6 out
+14p13 ring clk'
+
+#15 PSK sub-bit generation
+15p22 clk'
+15p31 ring000
+15p33 sub-bit-select
+15p32 sub-bit-complement
+15p38 sub-bit-complement
+15p36 psk-data-out'
+15p15 error-reset?
+15p14 clk'
+15p4 emitter
+15p5 psk-ok-error-indicator?
+15p7 psk-ok-error-indicator?
+15p45 ind-internal
+15p42 psk-check-disable-wired-high?
+15p43 psk-check-disable?
+15p29 psk-check-switch?
+15p28 external-data-in
+15p40 psk-data-out
+15p19 ring100
+15p41 sub-bit-enable'?
+15p26 bit-clk-out
+15p27 sub-bit-counter-Q2'
+15p39 sub-bit-seq-select
+15p20 bit-clk-out
+15p30 1 kHz in
+15p16 and-in-1
+15p12 and-in-2
+15p11 and-in-3
+15p10 and-in-4
+15p6 and-in-5
+15p8 and-in-6
+15p9 and-in-7
+15p13 ring001
+15p46 nand-in
+15p47 nand-in
+15p44 nand-out
+
+#16 logic
+16p11 decode-in-1
+16p5 decode-in-2
+16p8 decode-in-3
+16p28 decode-in-4
+16p26 decode-in-5
+16p24 decode-in-6
+16p29 decode-in-7
+16p30 decode-in-8
+16p22 decode-in-9
+16p27 decode-in-10
+16p10 decode-in-11
+16p6 decode-in-12
+16p7 decode-in-13
+16p31 decode-in-14
+16p32 decode-in-15
+16p14 decode-in-16
+16p33 decode-in-17
+16p40 decode-in-18
+16p9 decode-in-19
+16p4 decode-in-20
+16p12 decode-out-1
+16p15 decode-out-1'
+16p19 decode-out-2
+16p13 decode-out-2'
+16p16 decode-out-3
+16p34 decode-out-4
+16p35 decode-out-5
+16p43 decode-out-6
+16p38 decode-in-21
+16p39 decode-out-7
+16p17 decode-in-22
+16p18 decode-in-23
+16p44 decode-out-8
+16p37 buf-in
+16p36 buf-out
+
+
+#17 system address decoder
+17p18 ind-in
+17p19 ind-in
+17p4 ind-reset
+17p6 ind-K
+17p5 ind-out-internal
+17p8 ind-out-internal'
+17p7 ind-enable
+17p11 ind-out
+17p2 ind2-in
+17p10 ind2-out
+17p9 emitter
+17p35 enable-out
+17p13 enable-in
+17p37 clk'
+17p32 K
+17p34 reset'
+17p33 Q1
+17p40 Q1'
+17p30 J2
+17p31 K2
+17p26 J3
+17p27 K3
+17p16 J4
+17p17 K4
+17p22 out1
+17p15 out1'
+17p23 out2
+17p47 out2'
+17p38 out3
+17p21 out4
+17p29 out4'
+17p41 inA1
+17p42 inA2
+17p43 bit-in
+17p25 digit5-is-0-and-A
+17p46 inB1
+17p48 inB2
+17p44 inB3
+17p28 digit5-is-0-and-B
+17p14 digit5-is-0347
+17p24 digit5-is-not-0347
+17p20 digit5-is-not-037
+17p36 digit5-is-347
+
+#18 reader control
+18p45 reset'
+18p41 reset'-out
+18p43 reset'-out
+18p23 clk'
+18p36 100 Hz ctrl in
+18p37 100 Hz ctrl in
+18p33 100 Hz out
+18p8 ind1-in
+18p5 ind1-out
+18p14 emitter
+18p20 reader-motor-enable
+18p15 reader-motor-relay
+18p34 20 Hz pulse out
+18p12 reader-motor enable
+18p24 reader-state-0010
+18p11 reader-state-0010
+18p32 message-digit-clock-out
+18p9 1kHz-digit-clock-enable
+18p31 reader-digit-clock-enable
+18p10 200Hz-digit-clock-enable
+18p29 clk in
+18p22 reader-motor-enable
+18p38 digit-clock-out
+18p35 digit-clock-out
+18p39 reset'-out
+18p46 and-in1
+18p47 and-in2
+18p44 and-out
+18p42 and-out
+18p40 and-out
+18p6 ind3-in
+18p7 ind3-out
+18p17 ind4-in
+18p19 reader-enable'-switch-in?
+18p13 reader-enable'-switch-in?
+18p16 reader-enable-out
+
+#19 logic
+19p6 reset-in1
+19p7 reset-in2
+19p8 reset-in3
+19p4 clk'
+19p18 inv1-in
+19p14 inv1-out
+19p46 inv2-in
+19p44 inv2-out
+19p15 inv3-in
+19p19 inv3-out
+19p5 all-0
+19p17 toggle-in
+19p12 data-in
+19p16 data-in
+19p42 data-in
+19p39 data-in
+19p36 data-in
+19p47 data-in
+19p13 state-load
+
+
+#20 clock
+20p46 100 kHz clk in
+20p27 out ctrl
+20p11 out
+20p18 out
+20p15 emitter
+20p44 50 kHz enable
+20p43 50 kHz clock out
+20p34 clk2-enable
+20p22 50 kHz clk2 out
+20p32 clk3-enable
+20p33 50 kHz clk3 out
+20p29 in4
+20p38 100 kHz clk out
+20p35 50 kHz pulse out
+20p30 clk enable
+20p47 clk enable
+20p16 inA1
+20p17 inA2
+20p40 inB1
+20p39 inB2
+20p14 inC1
+20p13 inC2
+20p37 inD1
+20p36 inD2
+20p26 inE1
+20p25 inE2
+20p7 ind-K
+20p20 ind-enable
+20p9 ind reset
+20p23 K
+20p28 ff-out
+20p41 J1
+20p42 J2
+20p45 K1
+20p19 ind-out
+20p21 100kHz
+
+#21 10-state ring counter
+21p5 clk-enable
+21p6 clk'-in(100kHz)
+21p7 clk'-out(100kHz)
+21p31 reset'
+21p43 external1
+21p34 external1'-out
+21p44 external2
+21p32 external2'-out
+21p45 external3
+21p41 external3'-out
+21p46 external4
+21p40 external4'-out
+21p47 external5
+21p16 external5'-out
+21p42 nand-of-external-inputs
+21p21 inv1-in
+21p15 inv1-out
+21p33 inv2-in
+21p37 inv2-out
+21p14 inv3-in
+21p26 inv3-out
+21p30 inv4-in
+21p28 inv4-out
+21p17 ring-enable
+21p4 ring-state0'
+21p10 ring-state-even
+21p22 ring-state-odd
+21p35 ring-state-13578
+21p23 ring-state0'
+21p24 ring-state1'
+21p36 ring-state3'
+21p39 ring-state5'
+21p29 ring-state7'
+21p38 ring-state8'
+
+#22 op amp: 2 inputs
+22p18 external-input
+22p19 external-input
+
+#23 op amp: 3 inputs
+23p18 external-input
+23p19 external-input
+23p20 external-input
+
+#24 8 isolated inputs
+24p25 ain30
+24p16 ain32
+24p9 ain34
+24p23 ain36
+24p26 ain38
+24p14 ain40
+24p20 ain42
+24p24 ain44
+
+#25 op amp
