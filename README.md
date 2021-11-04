@@ -3,23 +3,25 @@
 This repository describes hardware and software for reverse-engineering a test box used with Apollo space hardware.
 This is unlike to be useful to anyone else, but I figure I'll document it.
 
+<img alt="The test system in action. Two boards are plugged into the box at the back and are controlled by the breadboarded Teensy in front." src="https://github.com/shirriff/beepomatic/blob/main/imgs/box-in-action.jpg?raw=true" width="300" />
+
 ## Background
 
 In the Apollo mission to the Moon, the [Up-Data Link](https://mobile.twitter.com/kenshirriff/status/1433169432709373953) was used to send data up to the spacecraft from
 the ground.
 
-![The Up-Data Link is a metal box painted a military gray. The box is roughly L-shaped and has several round connectors on top.](https://raw.githubusercontent.com/shirriff/beepomatic/main/imgs/updata-link.jpg)
+<img alt="The Up-Data Link is a metal box painted a military gray. The box is roughly L-shaped and has several round connectors on top." src="https://raw.githubusercontent.com/shirriff/beepomatic/main/imgs/updata-link.jpg" width="400" />
 
 To test the Up-Data Link, the [Up-Data Link Confidence Test Set](https://twitter.com/kenshirriff/status/1432411774985195527) was used.
 Unfortunately, we can't find any documentation on this test box, so I'm reverse-engineering it.
 
-![The up-data test box is a large rack-mountable box. It has a paper tape reader and switches, buttons, and illuminated digits on the front. 25 modules are plugged into the top of the box.](https://raw.githubusercontent.com/shirriff/beepomatic/main/imgs/updata-test-box.jpg)
+<img alt="The up-data test box is a large rack-mountable box. It has a paper tape reader and switches, buttons, and illuminated digits on the front. 25 modules are plugged into the top of the box." src="https://raw.githubusercontent.com/shirriff/beepomatic/main/imgs/updata-test-box.jpg" width="400" />
 
 The box consists of 25 circuit boards plugged into a wire-wrapped backplane. It's almost impossible to figure out how the boards are connected through this
 tangle of wires. I beeped out some connections with a multimeter, but it is extremely tedious to do this manually through trial and error.
 So I decided to automate the beeping process.
 
-![View of the backplane, a tangled mass of white wires.](https://raw.githubusercontent.com/shirriff/beepomatic/main/imgs/backplane-view.jpg)
+<img alt="View of the backplane, a tangled mass of white wires." src="https://raw.githubusercontent.com/shirriff/beepomatic/main/imgs/backplane-view.jpg" width="400" />
 
 ## Beep-o-matic
 
