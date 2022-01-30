@@ -19,7 +19,7 @@ def readMissing():
         # A part is a pin number e.g. 5, or range e.g. 5-8
         pinRange = part.split('-')
         if len(pinRange) == 2:
-          for pin in range(int(pinRange[0]), int(pinRange[1])):
+          for pin in range(int(pinRange[0]), int(pinRange[1]) + 1):
             missingPins[board].add(pin)
         else:
           missingPins[board].add(int(pinRange[0]))
@@ -38,7 +38,10 @@ def readLabels():
         board = int(m.group(1))
         boardDesc[board] = line
       else:
+        line = line.replace(' (UNCONNECTED)', '')
+        line = line.replace(' TODO', '')
         parts = line.split(' ', 1)
+        if len(parts) == 1: continue
         labels[parts[0]] = parts[1]
 
 def writeLabels():
